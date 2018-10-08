@@ -1,0 +1,195 @@
+ render() {
+        return (
+            <View style={styles.container}>
+              <View style={styles.buttonContainer}>
+                <Button title="Button 1"/>
+              </View>
+              <View style={styles.buttonContainer}>
+                <Button title="Button 2"/>
+              </View>
+            </View>
+        );
+    }
+}
+
+
+
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        flexDirection: 'row',
+        alignItems: 'center',
+        justifyContent: 'center',
+    },
+    buttonContainer: {
+        flex: 1,
+    }
+});
+
+
+clearTimer = () => {
+  // Is our timer running?
+  if (this.timerHandle) {
+      // Yes, clear it
+      clearTimeout(this.timerHandle);
+      this.timerHandle = 0;
+  }
+};
+setTimer = () => {
+ switch(this.state.randCount){
+   case 1 : this.timerHandle = setTimeout(() => {
+    this.setState({ error: true,yandın:"GAME OVER"});
+    console.log("1 yandın") 
+    this.timerHandle = 0;
+},500); break;
+   case 2 : this.timerHandle = setTimeout(() => {
+    this.setState({ error: true,yandın:"GAME OVER"});
+    console.log("2 yandın") 
+    this.timerHandle = 0;
+},700);break;
+   case 3 : this.timerHandle = setTimeout(() => {
+    this.setState({ error: true,yandın:"GAME OVER" });
+    console.log("3 yandın") 
+    this.timerHandle = 0;
+}, 1200);break;
+   case 4 : this.timerHandle = setTimeout(() => {
+    this.setState({ error: true,yandın:"GAME OVER"});
+    console.log("4 yandınn abimm") 
+    this.timerHandle = 0;
+}, 2000);break;
+   case 5 : this.timerHandle = setTimeout(() => {
+    this.setState({ error: true,yandın:"GAME OVER"});
+    console.log("5 yandınn abimm") 
+    this.timerHandle = 0;
+}, 2200);break;
+   case 6 : this.timerHandle = setTimeout(() => {
+    this.setState({ error: true,yandın:"GAME OVER" });
+    console.log("6 yandınn abimm") 
+    this.timerHandle = 0;
+}, 2500);break;
+   case 7 : this.timerHandle = setTimeout(() => {
+    this.setState({ error: true,yandın:"GAME OVER" });
+    console.log("7 yandınn abimm") 
+    this.timerHandle = 0;
+}, 3400);
+  break;
+ 
+   case 8 : this.timerHandle = setTimeout(() => {
+    this.setState({ error: true,yandın:"GAME OVER"});
+    console.log("8 yandınn abimm") 
+    this.timerHandle = 0;
+}, 4000);break;
+   case 9 : this.timerHandle = setTimeout(() => {
+    this.setState({ error: true,yandın:"GAME OVER" });
+    console.log("9 yandınn abimm") 
+    this.timerHandle = 0;
+}, 5200);break;
+   case 10 : this.timerHandle = setTimeout(() => {
+    this.setState({ error: true,yandın:"GAME OVER" });
+    console.log("10 yandınn abimm") 
+    this.timerHandle = 0;
+}, 5000);break;
+   case 11 : this.timerHandle = setTimeout(() => {
+    this.setState({ error: true,yandın:"GAME OVER" });
+    console.log("11 yandınn abimm") 
+    this.timerHandle = 0; 
+}, 5200);break;
+    default : null;
+ }
+};
+
+
+
+
+
+
+
+
+
+
+ let choosen;
+  switch(count){
+    case 0: choosen = "#37ecba"; break;
+    case 1: choosen = "#37ecba"; break;
+    case 2: choosen = "#37ecba"; break;
+    case 3: choosen = "#37ecba"; break;
+    case 4: choosen = "#37ecba"; break;
+    case 5: choosen = "#37ecba"; break;
+    case 6: choosen = "#37ecba"; break;
+    case 7: choosen = "#37ecba"; break;
+    case 8: choosen = "#37ecba"; break;
+    case 9: choosen = "#37ecba"; break;
+   
+
+    case 10: choosen = "#fa709a"; break;
+    case 11: choosen = "#fa709a"; break;
+    case 12: choosen = "#fa709a"; break;
+    case 13: choosen = "#fa709a"; break;
+    case 14: choosen = "#fa709a"; break;
+    case 15: choosen = "#fa709a"; break;
+    case 16: choosen = "#fa709a"; break;
+    case 17: choosen = "#fa709a"; break;
+    case 18: choosen = "#fa709a"; break;
+    case 19: choosen = "#fa709a"; break;
+
+    case 20: choosen = "red"; break;
+    case 21: choosen = "red"; break;
+    case 22: choosen = "red"; break;
+    case 23: choosen = "red"; break;
+    case 24: choosen = "red"; break;
+    case 25: choosen = "red"; break;
+    case 26: choosen = "red"; break;
+    case 27: choosen = "red"; break;
+    case 28: choosen = "red"; break;
+    case 29: choosen = "red"; break;
+    
+    case 30: choosen = "green"; break;
+
+    
+    default:null;
+  } 
+  return choosen;
+
+  ////////////////////////////////////////////////////////////////////
+
+  let choosen;
+  switch(count){
+    case 0: choosen = "#192f6a"; break;
+    case 1: choosen = "#192f6a"; break;
+    case 2: choosen = "#192f6a"; break;
+    case 3: choosen = "#192f6a"; break;
+    case 4: choosen = "#192f6a"; break;
+    case 5: choosen = "#192f6a"; break;
+    case 6: choosen = "#192f6a"; break;
+    case 7: choosen = "#192f6a"; break;
+    case 8: choosen = "#192f6a"; break;
+    case 9: choosen = "#192f6a"; break;
+
+    case 10: choosen = "#fee140"; break;
+    case 11: choosen = "#fee140"; break;
+    case 12: choosen = "#fee140"; break;
+    case 13: choosen = "#fee140"; break;
+    case 14: choosen = "#fee140"; break;
+    case 15: choosen = "#fee140"; break;
+    case 16: choosen = "#fee140"; break;
+    case 17: choosen = "#fee140"; break;
+    case 18: choosen = "#fee140"; break;
+    case 19: choosen = "#fee140"; break;
+
+    case 20: choosen = "red"; break;
+    case 21: choosen = "red"; break;
+    case 22: choosen = "red"; break;
+    case 23: choosen = "red"; break;
+    case 24: choosen = "red"; break;
+    case 25: choosen = "red"; break;
+    case 26: choosen = "red"; break;
+    case 27: choosen = "red"; break;
+    case 28: choosen = "red"; break;
+    case 29: choosen = "red"; break;
+    
+    case 30: choosen = "green"; break;
+
+    
+    default:null;
+  } 
+  return choosen;
